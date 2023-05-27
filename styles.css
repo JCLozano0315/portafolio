@@ -1,0 +1,127 @@
+body {
+    font-family:  Helvetica, Arial, sans-serif;
+    background: lightblue;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.titulo {
+    text-align: center;
+    margin: 20px auto;
+    color: rgb(85, 83, 83);
+}
+.form__contain {
+    width: 70%;
+    position: relative;
+    margin: 16px auto;
+    padding: 0 10px;
+}
+.flex-hor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.side-left,
+.side-right {
+    height: 60vh;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mensaje__input,
+.mensaje__output {
+    font-size: 24px;
+    font-family:  Helvetica, Arial,sans-serif;
+    color: midnightblue;
+    resize: none;
+    overflow: auto;
+    text-align: left;
+    border: none;
+    outline: none;
+    padding: 14px;
+    border-radius: 14px;
+    background: lightcyan;
+    box-shadow: 6px 8px 10px 0 rgba(59, 58, 58, 0.4);
+}
+.mensaje__output {
+    background: white;
+}
+.text-small {
+    font-size: 16px;
+    color: rgb(85, 83, 83);
+    padding-left: 4px;
+}
+.contain__botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.boton {
+    width: 150px;
+    font-size: 22px;
+    padding: 7px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.boton-encr {
+    color: rgb(66, 64, 64);
+    background: lightgreen;
+}
+.boton-desen {
+    color: rgb(66, 64, 64);
+    background: lightpink;
+}
+.boton-clear {
+    margin: 0 auto;
+    color: white;
+    background: peru;
+}
+.boton-copiar {
+    display: none;
+    margin: 0 auto;
+    /* left: 20px;
+    bottom: 20px; */
+}
+.boton-copiar:hover {
+    background: grey;
+}
+.boton-encr:hover {
+    background: rgb(112, 238, 112);
+}
+.boton-desen:hover {
+    background: rgb(241, 141, 156);
+}
+.boton-clear:hover {
+    background: rgb(239, 178, 118);
+}
+
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+    .form__contain {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .form__contain {
+        width: 80%;
+    }
+    .side-left,
+    .side-right {
+        height: 64vh;
+    }
+}
